@@ -14,7 +14,7 @@ export const TopBannerWrapper = styled.div`
       width: 730px;
       .item {
         img {
-          height: 285px;
+          height: 284px;
           width: 730px;
         }
       }
