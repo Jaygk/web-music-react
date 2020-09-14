@@ -1,7 +1,7 @@
 import React, { memo, useEffect } from 'react'
 import { shallowEqual, useDispatch, useSelector } from 'react-redux'
 
-import { getHotRecommends } from '../../store/actionCreators'
+import { getHotRecommendsAction } from '../../store/actionCreators'
 
 import { HotRecommendWrapper } from './style'
 
@@ -19,7 +19,7 @@ export default memo(function HotRecommend() {
   )
 
   useEffect(() => {
-    dispatch(getHotRecommends(8))
+    dispatch(getHotRecommendsAction(8))
   }, [dispatch])
 
   return (
