@@ -7,6 +7,8 @@ export const RecommendWrapper = styled.div`
 
 export const RecommendContent = styled.div`
   display: flex;
+  border: 1px solid #d3d3d3;
+  border-width: 0 1px;
 `
 
 export const RecommendLeft = styled.div`
