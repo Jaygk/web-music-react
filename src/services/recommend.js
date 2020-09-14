@@ -14,3 +14,9 @@ export const getHotRecommendsList = limit => {
     },
   })
 }
+
+export const getNewAlbumsList = () => {
+  return request({
+    url: '/album/newest',
+  })
+}
