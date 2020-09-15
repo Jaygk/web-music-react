@@ -20,3 +20,12 @@ export const getNewAlbumsList = () => {
     url: '/album/newest',
   })
 }
+
+export const getTopRankingList = idx => {
+  return request({
+    url: '/top/list',
+    params: {
+      idx,
+    },
+  })
+}

@@ -6,6 +6,10 @@ const defaultState = Map({
   bannerList: [],
   hotRecommends: [],
   newAlbums: [],
+
+  upRanking: [],
+  newRanking: [],
+  originRanking: [],
 })
 
 export default (state = defaultState, action) => {
@@ -16,6 +20,13 @@ export default (state = defaultState, action) => {
       return state.set('hotRecommends', action.list)
     case actionType.CHANGE_NEW_ALBUMS:
       return state.set('newAlbums', action.list)
+      
+    case actionType.CHANGE_UP_RANKING:
+      return state.set('upRanking', action.list)
+    case actionType.CHANGE_NEW_RANKING:
+      return state.set('newRanking', action.list)
+    case actionType.CHANGE_ORIGIN_RANKING:
+      return state.set('originRanking', action.list)
     default:
       return state
   }
